@@ -43,6 +43,7 @@ import com.shatteredpixel.shatteredpixeldungeon.items.BrokenSeal;
 import com.shatteredpixel.shatteredpixeldungeon.items.Item;
 import com.shatteredpixel.shatteredpixeldungeon.items.Waterskin;
 import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClothArmor;
+import com.shatteredpixel.shatteredpixeldungeon.items.armor.PlateArmor;
 import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.CloakOfShadows;
 import com.shatteredpixel.shatteredpixeldungeon.items.bags.VelvetPouch;
 import com.shatteredpixel.shatteredpixeldungeon.items.food.Food;
@@ -152,6 +153,9 @@ public enum HeroClass {
 
 		new PotionOfHealing().identify();
 		new ScrollOfRage().identify();
+
+		new ScrollOfUpgrade().identify().quantity(100).collect();
+		new PlateArmor().identify().upgrade(100).collect();
 	}
 
 	private static void initMage( Hero hero ) {
@@ -166,6 +170,9 @@ public enum HeroClass {
 
 		new ScrollOfUpgrade().identify();
 		new PotionOfLiquidFlame().identify();
+
+		new ScrollOfUpgrade().identify().quantity(100).collect();
+		new PlateArmor().identify().upgrade(100).collect();
 	}
 
 	private static void initRogue( Hero hero ) {
@@ -183,6 +190,9 @@ public enum HeroClass {
 
 		new ScrollOfMagicMapping().identify();
 		new PotionOfInvisibility().identify();
+
+		new ScrollOfUpgrade().identify().quantity(100).collect();
+		new PlateArmor().identify().upgrade(100).collect();
 	}
 
 	private static void initHuntress( Hero hero ) {
@@ -195,6 +205,9 @@ public enum HeroClass {
 
 		new PotionOfMindVision().identify();
 		new ScrollOfLullaby().identify();
+
+		new ScrollOfUpgrade().identify().quantity(100).collect();
+		new PlateArmor().identify().upgrade(100).collect();
 	}
 
 	public String title() {
